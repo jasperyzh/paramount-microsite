@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.masthead__ratio {
+    aspect-ratio: 16/9;
+    margin: auto;
+    margin-top: 4rem;
+}
+.masthead__background {
+    background-image: url("~img/masthead.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

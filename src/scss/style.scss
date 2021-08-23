@@ -1,0 +1,256 @@
+@use "./abstracts" as *;
+
+@use "./section/masthead";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+body {
+    font-family: "Lato", Sans-serif;
+    font-size: 13px;
+}
+
+#site-container:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 74px;
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url('/scss/abstracts/BEBAS___.TTF') format('truetype');
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "Bebas", Sans-serif;
+    color: $color-blue;
+    font-weight: 500;
+    word-spacing: 7px;
+}
+p {
+    font-size: 15px;
+    color: $color-darkgrey;
+}
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 20%);
+}
+.nav-item {
+    margin-left: 25px;
+}
+.navbar-nav .nav-link {
+    color: #1CA3B1;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-toggler {
+    background-color: $color-darkgrey;
+}
+.navbar .navbar-toggler {
+    border-color: $color-darkgrey;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-primary {
+    background: #1CA3B1;
+    font-family: "Lato",sans-serif;
+    text-transform: capitalize;
+    padding: 20px 38px!important;
+    color: #fff!important;
+    cursor: pointer;
+    display: inline-block!important;
+    font-size: 13px;
+    border-radius: 25px;
+    line-height: 1;
+    -moz-user-select: none;
+    letter-spacing: 1px;
+    line-height: 0;
+    transition: color .4s linear;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #1CA3B1;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg__primary {
+    background-color: $color-primary;
+}
+.bg-grey {
+    background-color: $color-grey;
+}
+
+.intro {
+    h2.h2-padding {
+        color: #FC2561;
+        padding-left: 12rem;
+        line-height: 3rem;
+    }
+}
+@media (max-width: 767px) {
+    .intro {
+        h2.h2-padding {
+            padding-left: 0;
+            line-height: 3rem;
+        }
+    }
+}
+
+small {
+    font-size: 16px!important;
+    font-weight: 100;
+}
+
+.about {
+    background-image: url("~img/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    container {
+        padding-left: 5rem;
+    }
+
+    h2 {
+        line-height: 3rem;
+    }
+}
+
+.prize {
+    h2 {
+        color: #FC2561;
+        line-height: 3rem;
+    }
+}
+
+.qualification {
+    background-image: url("~img/qualification.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6,
+    p {
+        color: #ffffff;
+    }
+}
+
+.how-to {
+    h5 {
+        color: #FC2561;
+    }
+}
+
+.cta {
+    h2 {
+        line-height: 3rem;
+    }
+}
+
+.nominate-hero {
+    h1 {
+        color: #FC2561;
+        line-height: 3.8rem;
+    }
+}
+.nominate-thank-you {
+    h1 {
+        color: #FC2561;
+        line-height: 3.8rem;
+    }
+}
+
+.share {
+    h6 {
+        color: #FC2561;
+    }
+}
+
+.terms-condition {
+    &__list {
+        font-size: 15px;
+    }
+}
+.terms-condition__list-point {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        font-family: "Bebas", Sans-serif;
+        color: #ffffff;
+        font-weight: 500;
+        word-spacing: 7px;
+    }
+
+    p {
+        color: #ffffff;
+    }
+}
+
+.footer__list-group {
+    .list-group-item {
+        background: transparent;
+        border: 0;
+    }
+    a {
+        color: white;
+    }
+}
+
+/* @use "./components/button";
+@use "./components/tiny-slider";
+
+@use "./section/header";
+@use "./section/masthead";
+@use "./section/programme-openday";
+@use "./section/youtube";
+@use "./section/registration";
+
+@use "./section/thank-you";
+
+@use "~bootstrap-select/sass/bootstrap-select";
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+*/
