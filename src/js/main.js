@@ -3,6 +3,10 @@ const jQuery = require("jquery");
 window.$ = window.jQuery = jQuery;
 
 // import library
+import "jquery-validation";
+
+
+// import library
 // import "jquery-validation";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap-select";
@@ -17,13 +21,41 @@ new Vue({ render: createElement => createElement(Webinar) }).$mount('#webinar');
 
 import Vue from 'vue';
 import NominationForm from './components/NominationForm';
-new Vue({ render: createElement => createElement(NominationForm) }).$mount('#nomination-form');
+
+// 
+
+// console.log(document.querySelector("#nomination-form"));
+if (document.querySelector("#nomination-form")) {
+    new Vue({ render: createElement => createElement(NominationForm) }).$mount('#nomination-form');
+}
+
+// let vueApp = {
+//     "#nomination-form'": NominationForm,
+// };
+
+// // load vue instances
+// document.addEventListener("DOMContentLoaded", () => {
+//     // if elementID exists > run vue instance
+//     for (const key in vueApp) {
+//         if (document.querySelector(key)) {
+//             console.log("vueloaded", key);
+//             // new Vue({
+//             //     render: h => h(vueApp[key]),
+//             // }).$mount(key);
+// // new Vue({ render: createElement => createElement(NominationForm) }).$mount('#nomination-form');
+
+//             new Vue({ render: createElement => createElement(vueApp[key]) }).$mount(`#${key}`);
+
+//         }
+//     }
+// });
+
 
 // Remember to include the smooth scroll polyfill:
 // (https://github.com/iamdustan/smoothscroll)
 
 // To Section
-const navLinks = document.querySelectorAll(
+/* const navLinks = document.querySelectorAll(
     'nav ul li a'
 );
 
@@ -48,7 +80,7 @@ Array.from(navLinks).forEach(navLink => {
             behavior: 'smooth'
         });
     }
-})
+}) */
 
 
 // scroll-to-top
@@ -59,8 +91,8 @@ Array.from(navLinks).forEach(navLink => {
 
 
 //copy link
-const copy_button = doucment.querySelector("#copy_link");
-console.log(copy_button)
+const copy_button = document.querySelector("#copy_link");
+// console.log(copy_button)
 if (copy_button) {
     copy_button.addEventListener("click", function () {
         let copyText = document.getElementById("myInput");

@@ -17,7 +17,7 @@ body {
 
 @font-face {
     font-family: "Bebas";
-    src: url('/scss/abstracts/BEBAS___.TTF') format('truetype');
+    src: url("/scss/abstracts/BEBAS___.TTF") format("truetype");
 }
 
 h1,
@@ -50,7 +50,7 @@ p {
     margin-left: 25px;
 }
 .navbar-nav .nav-link {
-    color: #1CA3B1;
+    color: #1ca3b1;
 }
 .fixed-top {
     position: fixed;
@@ -70,23 +70,23 @@ p {
 }
 
 .btn-primary {
-    background: #1CA3B1;
-    font-family: "Lato",sans-serif;
+    background: #1ca3b1;
+    font-family: "Lato", sans-serif;
     text-transform: capitalize;
-    padding: 20px 38px!important;
-    color: #fff!important;
+    padding: 20px 38px !important;
+    color: #fff !important;
     cursor: pointer;
-    display: inline-block!important;
+    display: inline-block !important;
     font-size: 13px;
     border-radius: 25px;
     line-height: 1;
     -moz-user-select: none;
     letter-spacing: 1px;
     line-height: 0;
-    transition: color .4s linear;
+    transition: color 0.4s linear;
     position: relative;
     z-index: 1;
-    border: 2px solid #1CA3B1;
+    border: 2px solid #1ca3b1;
     overflow: hidden;
     margin: 0;
 }
@@ -100,7 +100,7 @@ p {
 
 .intro {
     h2.h2-padding {
-        color: #FC2561;
+        color: #fc2561;
         padding-left: 12rem;
         line-height: 3rem;
     }
@@ -115,7 +115,7 @@ p {
 }
 
 small {
-    font-size: 16px!important;
+    // font-size: 16px!important;
     font-weight: 100;
 }
 
@@ -136,7 +136,7 @@ small {
 
 .prize {
     h2 {
-        color: #FC2561;
+        color: #fc2561;
         line-height: 3rem;
     }
 }
@@ -166,7 +166,7 @@ small {
 
 .how-to {
     h5 {
-        color: #FC2561;
+        color: #fc2561;
     }
 }
 
@@ -178,20 +178,20 @@ small {
 
 .nominate-hero {
     h1 {
-        color: #FC2561;
+        color: #fc2561;
         line-height: 3.8rem;
     }
 }
 .nominate-thank-you {
     h1 {
-        color: #FC2561;
+        color: #fc2561;
         line-height: 3.8rem;
     }
 }
 
 .share {
     h6 {
-        color: #FC2561;
+        color: #fc2561;
     }
 }
 
@@ -236,6 +236,22 @@ small {
     }
     a {
         color: white;
+    }
+}
+
+// form
+form {
+    label span {
+        color: red;
+    }
+    label.error {
+        width: 100%;
+        margin-top: 0.5rem;
+        color: #1CA3B1;
+    }
+    #tnc-error {
+        width: auto;
+        margin: 0;
     }
 }
 
