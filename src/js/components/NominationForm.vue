@@ -150,7 +150,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <button
           class="btn btn-primary btn-lg btn-block"
           type="submit"

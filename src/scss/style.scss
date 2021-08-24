@@ -52,13 +52,15 @@ p {
 .navbar-nav .nav-link {
     color: #1ca3b1;
 }
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
+// .md-fixed-top {
+//     @include media-breakpoint-up(md) {
+//         position: fixed;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         z-index: 1030;
+//     }
+// }
 .navbar-toggler {
     background-color: #1ca3b1;
 }
@@ -260,11 +262,11 @@ section {
 }
 aside {
     display: inline-block;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     background: red;
     position: absolute;
-    top:-60px;
+    top: -60px;
     visibility: hidden;
 }
 
