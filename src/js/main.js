@@ -55,14 +55,16 @@ if (document.querySelector("#nomination-form")) {
 // (https://github.com/iamdustan/smoothscroll)
 
 // To Section
-/* const navLinks = document.querySelectorAll(
-    'nav ul li a'
+const navLinks = document.querySelectorAll(
+    '.navbar .nav-link'
 );
 
 Array.from(navLinks).forEach(navLink => {
-    const href = navLink.getAttribute('href');
+    // const href = navLink.getAttribute('href');
+    const href = navLink.getAttribute('data-anchor');
+
     const section = document.querySelector(href);
-    const offset = 20; // nav and offset
+    const offset = 40; // nav and offset
 
     navLink.onclick = e => {
         // get body position
@@ -80,8 +82,38 @@ Array.from(navLinks).forEach(navLink => {
             behavior: 'smooth'
         });
     }
-}) */
+})
 
+document.addEventListener("DOMContentLoaded", e => {
+    setTimeout(function () {
+        window.scrollTo(0, 0);
+    }, 1);
+    onLoadScrollTo();
+})
+
+function onLoadScrollTo() {
+    const url = window.location.href;
+    if (!url.includes("#")) {
+        return;
+    }
+    console.log('yay')
+    const hash = url.split('#').pop();
+
+    if (hash) {
+        const offset = 80;
+        const section = document.querySelector(`#${hash}`);
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const sectionRect = section.getBoundingClientRect().top;
+        const sectionPosition = sectionRect - bodyRect;
+        const offsetPosition = sectionPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+    console.log(`#${hash}`)
+}
 
 // scroll-to-top
 /* document.querySelector('#top').onclick = e => {

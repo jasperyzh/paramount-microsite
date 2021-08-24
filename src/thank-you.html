@@ -12,9 +12,19 @@
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
     <!-- thank-you.html -->
-    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="robots" content="noindex">
 
     <link rel="stylesheet" href="./scss/style.scss">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118595776-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118595776-1');
+    </script>
 
 </head>
 
@@ -35,26 +45,20 @@
                 <div class="collapse navbar-collapse" id="navbarsExample07">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link"
-                                href="https://staging.fishermen-analytics.com/paramount-jiran/#about">ABOUT <span
+                            <a class="nav-link" data-anchor="#about" href="./#about">ABOUT <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://staging.fishermen-analytics.com/paramount-jiran/#qualification">QUALIFICATION</a>
+                            <a class="nav-link" data-anchor="#qualification" href="./#qualification">QUALIFICATION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://staging.fishermen-analytics.com/paramount-jiran/#prize">PRIZE</a>
+                            <a class="nav-link" data-anchor="#prize" href="./#prize">PRIZE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://staging.fishermen-analytics.com/paramount-jiran/#how-to">HOW TO
-                                NOMINATE</a>
+                            <a class="nav-link" data-anchor="#how-to" href="./#how-to">HOW TO NOMINATE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary"
-                                href="https://staging.fishermen-analytics.com/paramount-jiran/#cta">NOMINATE</a>
+                            <a class="nav-link btn btn-primary" data-anchor="#cta" href="./#cta">NOMINATE</a>
                         </li>
                     </ul>
                 </div>
