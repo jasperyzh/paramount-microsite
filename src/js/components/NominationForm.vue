@@ -266,7 +266,7 @@ export default {
             /**
              * redirect
              */
-            window.location.href = "../thank-you.html";
+            window.location.href = "./thank-you.html";
           },
           error: (xhr, status, error) => {
             console.log(xhr, status, error);

@@ -47,20 +47,24 @@
                 <div class="collapse navbar-collapse" id="navbarsExample07">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" data-anchor="#about" href="./#about">ABOUT <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+                                data-anchor="#about" href="/#about">ABOUT <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-anchor="#qualification" href="./#qualification">QUALIFICATION</a>
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+                                data-anchor="#qualification" href="/#qualification">QUALIFICATION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-anchor="#prize" href="./#prize">PRIZE</a>
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+                                data-anchor="#prize" href="/#prize">PRIZE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-anchor="#how-to" href="./#how-to">HOW TO NOMINATE</a>
+                            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+                                data-anchor="#how-to" href="/#how-to">HOW TO NOMINATE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary" data-anchor="#cta" href="./#cta">NOMINATE</a>
+                            <a class="nav-link btn btn-primary" data-toggle="collapse"
+                                data-target=".navbar-collapse.show" data-anchor="#cta" href="/#cta">NOMINATE</a>
                         </li>
                     </ul>
                 </div>
@@ -70,20 +74,7 @@
 
     <main class="main">
         <section id="masthead" class="py-5 masthead__background masthead__ratio">
-            <!--
-<div class="container">
-<div class="row justify-content-end">
-<div class="col-md-6">
-<h1 class="text-uppercase">Ordinary people changing lives in their Community</h1>
-</div>
-</div>
-<div class="row justify-content-end">
-<div class="col-md-6">
-<img src="https://via.placeholder.com/400x300" alt="placeholder">
-</div>
-</div>
-</div>
--->
+            <aside id="masthead-to"></aside>
         </section>
 
         <section id="intro" class="intro my-5 text-center">
@@ -138,6 +129,7 @@
         </section>
 
         <section id="about" class="about py-5 bg-light">
+            <aside id="about-to"></aside>
             <div class="container">
                 <div class="row py-4">
                     <div class="col-md-6">
@@ -159,6 +151,7 @@
         </section>
 
         <section id="qualification" class="qualification py-5 bg__qualification text-center">
+            <aside id="qualification-to"></aside>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -180,6 +173,7 @@
         </section>
 
         <section id="prize" class="prize pt-5">
+            <aside id="prize-to"></aside>
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-md-6">
@@ -200,6 +194,7 @@
         </section>
 
         <section id="how-to" class="how-to pt-5 pb-4 bg-grey text-center">
+            <aside id="how-to-to"></aside>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -238,6 +233,7 @@
         </section>
 
         <section id="cta" class="cta py-5">
+            <aside id="cta-to"></aside>
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-md-6">
@@ -266,8 +262,10 @@
                     <p><small>GOT A QUESTION?</small></p>
                     <h2 class="text-uppercase mb-4">Contact us</h2>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><i class="mr-2 bi bi-telephone-fill"></i> +603 2770 9100</li>
-                        <li><i class="mr-2 bi bi-envelope-fill"></i> pp-info@paramountproperty.my</li>
+                        <li class="mb-3"><i class="mr-2 bi bi-telephone-fill"></i> <a href="tel:+60327709100">+603 2770
+                                9100</a></li>
+                        <li><i class="mr-2 bi bi-envelope-fill"></i> <a
+                                href="mailto:pp-info@paramountproperty.my">pp-info@paramountproperty.my</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
