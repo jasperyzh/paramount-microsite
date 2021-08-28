@@ -9,7 +9,7 @@
     <div class="row justify-content-around">
       <div class="col-md-5">
         <h3 class="text-uppercase">Nominator’s Information</h3>
-        <p>Fill in your nominator’s information.</p>
+        <p>Fill in your information.</p>
         <p><small>*Required fields marked with asterisks.</small></p>
 
         <div class="mb-3">
@@ -21,7 +21,7 @@
               class="form-control"
               name="full_name"
               id="full_name"
-              placeholder="Fill in your Nominator's Full Name"
+              placeholder="Fill in your Full Name"
               required
               :value="form_data.full_name"
             />
@@ -38,7 +38,7 @@
             class="form-control"
             name="email"
             id="email"
-            placeholder="e.g. yournominator@gmail.com"
+            placeholder="e.g. youremail@gmail.com"
             required
             :value="form_data.email"
           />
